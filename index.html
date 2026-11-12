@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConnectX - Social Media</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <h1>Connect<span>X</span></h1>
+    <div class="profile">M</div>
+</header>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>Menu</h2>
+        <a href="#">🏠 Home</a>
+        <a href="#compose">✏️ Create Post</a>
+        <a href="#feed">📰 Explore</a>
+        <p class="sidebar-footer">Connect with the world!</p>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <section class="compose" id="compose">
+            <h2>Create a Post</h2>
+
+            <textarea
+                id="postInput"
+                placeholder="What's happening?"
+                maxlength="280">
+            </textarea>
+
+            <div class="post-controls">
+                <span id="charCount">0 / 280</span>
+                <button onclick="createPost()">Post</button>
+            </div>
+        </section>
+
+        <section class="feed" id="feed">
+            <h2>Latest Posts</h2>
+            <div id="postsContainer"></div>
+        </section>
+
+    </main>
+
+    <!-- Right Sidebar -->
+    <aside class="right-sidebar">
+        <h3>About ConnectX</h3>
+        <p>Share your thoughts and connect with people around the world.</p>
+
+        <h3>Trending Topics</h3>
+        <p>#Technology</p>
+        <p>#Programming</p>
+        <p>#Innovation</p>
+    </aside>
+
+</div>
+
+<footer>
+    <p>© 2026 ConnectX. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
